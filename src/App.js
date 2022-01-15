@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import OrderEntry from './pages/entry/OrderEntry';
-import OrderConfirmation from './pages/summary/OrderConfirmation';
 import OrderSummary from './pages/summary/OrderSummary';
 
 import { OrderDetailsProvider } from './contexts/OrderDetails';
+import OrderConfirmation from './pages/confirmation/OrderConfirmation';
 
 export default function App() {
   const [orderPhase, setOrderPhase] = useState('inProgress');
