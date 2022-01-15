@@ -27,7 +27,7 @@ test('handles error for scoops and toppings routes', async () => {
   });
 });
 
-test.only('button is disabled for no scoops', async () => {
+test('button is disabled for no scoops', async () => {
   render(<OrderEntry setOrderPhase={jest.fn()} />);
 
   const orderSummaryButton = screen.getByRole('button', {
